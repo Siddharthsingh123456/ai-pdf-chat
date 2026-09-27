@@ -1,3 +1,1 @@
-# ai-pdf-chat
-
-MERN + AI application — production-ready foundation.
+# AI PDF Chat\n\nMERN + AI document workspace for uploading PDFs, extracting text in the browser and asking grounded questions.\n\n## Features\n- Client-side PDF text extraction with PDF.js\n- Grounded document Q&A\n- Server-side OpenAI-compatible integration\n- MongoDB history persistence\n- Premium responsive interface\n- Node 24 + Vercel ready\n\n## Environment\nOPENAI_API_KEY=\nOPENAI_MODEL=gpt-4o-mini\nMONGODB_URI=\n\nImport into Vercel, add the variables and deploy.
