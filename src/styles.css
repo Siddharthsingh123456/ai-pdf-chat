@@ -36,3 +36,14 @@ body:after{background:linear-gradient(90deg,#ff67670a 1px,transparent 1px),linea
 .orb:after{content:"▧";position:absolute;right:20px;top:18px;font:700 26px "Space Mono";border:0!important;transform:none!important;opacity:.7!important}
 @keyframes pdfFloat{0%,100%{transform:rotate(-7deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-13px)}}@keyframes pdfBack{50%{transform:translateY(-50%) rotate(4deg)}}
 .cards article,.featureGrid article,.pricing article{border-radius:4px!important}
+
+
+/* NAV V3 — PDF DOCUMENT TOOLBAR */
+.nav{height:70px!important;margin:10px 14px 0!important;border:1px solid #ff6f6f55!important;border-radius:3px!important;background:#110b0eea!important;box-shadow:0 14px 45px #0009!important}
+.logo span{border-radius:3px!important}
+.nav nav{border:1px solid #ff6f6f30!important;border-radius:3px!important;background:#080609!important;padding:3px!important}
+.nav nav button{font-family:"Space Mono"!important;border-radius:2px!important;font-size:8px!important;text-transform:uppercase;letter-spacing:.04em}
+.nav nav button:hover{background:#ff646712!important;color:#ffaaa7!important}
+.navActions{gap:6px!important}.ghost{font-family:"Space Mono"!important;border-radius:2px!important}
+.primary{font-family:"Space Mono"!important;border-radius:2px!important;text-transform:uppercase;box-shadow:0 0 20px #ff5f5f25!important}
+
