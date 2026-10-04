@@ -47,3 +47,11 @@ body:after{background:linear-gradient(90deg,#ff67670a 1px,transparent 1px),linea
 .navActions{gap:6px!important}.ghost{font-family:"Space Mono"!important;border-radius:2px!important}
 .primary{font-family:"Space Mono"!important;border-radius:2px!important;text-transform:uppercase;box-shadow:0 0 20px #ff5f5f25!important}
 
+
+
+/* NAV FINAL — PDF: document index */
+.nav nav{display:flex!important;gap:0!important;padding:0!important;border:0!important;background:transparent!important}
+.nav nav button{position:relative!important;padding:10px 16px!important;border:0!important;border-left:1px solid #ff6f6f30!important;border-radius:0!important;background:transparent!important;font-family:"Space Mono"!important;font-size:8px!important;color:#b9a8ac!important}
+.nav nav button:first-child{border-left:0}
+.nav nav button:before{content:"//";color:#ff7777;margin-right:5px}
+.nav nav button:hover{background:#ff6f6f0d!important;color:#ffb5b5!important;transform:none!important}
