@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;min-height:100vh;font-family:Inter,system-ui,sans-serif;line-height:1.55;overflow-x:hidden;background:#080709;color:#f4f7ff}
 body:before{content:"";position:fixed;inset:-20%;z-index:-5;pointer-events:none;background:radial-gradient(circle at 16% 18%,#ff4b6830,transparent 24%),radial-gradient(circle at 85% 18%,#ff80632d,transparent 25%),radial-gradient(circle at 55% 85%,#b34dff20,transparent 27%);filter:blur(25px);animation:drift 18s ease-in-out infinite alternate}
@@ -21,3 +22,18 @@ button,input,textarea,select{font:inherit}button{cursor:pointer;transition:.25s 
 footer{max-width:1240px;margin:auto;padding:25px 5%;display:flex;justify-content:space-between;gap:16px;border-top:1px solid #ffffff10;color:#647188;font-size:8px}footer b{font-family:"Space Grotesk";color:#aeb8c9}
 @media(max-width:900px){.nav nav{display:none}.mobileMenu{display:block;margin-left:auto}.nav nav.navOpen{display:flex;position:absolute;left:14px;right:14px;top:72px;flex-direction:column;padding:8px;background:#070b12f5;backdrop-filter:blur(18px)}.nav nav button{text-align:left}.hero{grid-template-columns:1fr;padding-top:62px}.heroVisual{height:300px}.stats{grid-template-columns:1fr 1fr;margin:0 5%}.cards,.pricing{grid-template-columns:1fr}.featureGrid{grid-template-columns:1fr 1fr}.workGrid{grid-template-columns:1fr}}
 @media(max-width:560px){.nav{height:70px;padding:0 14px}.logo strong{font-size:12px}.logo span{width:34px;height:34px}.navActions .userChip,.navActions .navCta{display:none}.hero{padding:50px 18px 40px;min-height:auto}.hero h1{font-size:44px}.heroBtns{flex-direction:column}.heroVisual{height:235px}.orb{width:170px;height:170px;font-size:42px}.glow{width:250px;height:250px}.stats{grid-template-columns:1fr;margin:0 16px}.stats div{border-right:0;border-bottom:1px solid #ffffff10}.stats div:last-child{border-bottom:0}.section,.content{padding:78px 18px}.section h2,.content h1{font-size:34px}.featureGrid{grid-template-columns:1fr}.auth{padding:24px 15px;min-height:calc(100vh - 70px)}.authCard{padding:23px}.workspace{padding:38px 14px 60px}.workspaceHead{flex-direction:column;align-items:flex-start}footer{flex-direction:column;padding:22px 18px}}
+
+
+/* V2 — DOCUMENT LAB / PDF CHAT */
+body{font-family:"Archivo",sans-serif;background:#0a0809}
+body:before{background:radial-gradient(circle at 18% 22%,#ff5d5d1d,transparent 24%),radial-gradient(circle at 82% 68%,#9b6cff1b,transparent 26%);filter:blur(32px)}
+body:after{background:linear-gradient(90deg,#ff67670a 1px,transparent 1px),linear-gradient(#ff67670a 1px,transparent 1px);background-size:48px 48px;transform:perspective(500px) rotateX(55deg) scale(1.5);transform-origin:center bottom;opacity:.22}
+.logo,.nav nav button,.primary{font-family:"Space Mono"!important}.hero h1,.section h2,.content h1,.workspaceHead h1,.authCard h1{font-family:"Archivo",sans-serif!important;letter-spacing:-.055em!important}
+.hero h1{font-size:clamp(48px,6.4vw,84px)!important}
+.heroVisual:before,.glow{display:none!important}
+.heroVisual:after{content:"PDF";position:absolute;width:270px;height:340px;right:10%;top:50%;transform:translateY(-50%) rotate(8deg);display:grid;place-items:center;font:700 72px "Space Mono";letter-spacing:-8px;color:#ffb3b3;background:linear-gradient(145deg,#2a1115,#100b10);border:1px solid #ff6f6f55;clip-path:polygon(0 0,74% 0,100% 20%,100% 100%,0 100%);box-shadow:24px 32px 80px #ff5c5c2d;z-index:-1;animation:pdfBack 7s ease-in-out infinite}
+.orb{width:230px!important;height:300px!important;border-radius:4px!important;background:linear-gradient(155deg,#fff8f6,#ff8a82 46%,#652b4a)!important;box-shadow:18px 30px 85px #ff656055!important;color:#3d1018!important;font:700 28px "Space Mono"!important;transform:rotate(-7deg)!important;animation:pdfFloat 6s ease-in-out infinite!important}
+.orb:before{content:"01\A 02\A 03\A 04";white-space:pre;position:absolute;inset:36px!important;border:0!important;border-left:3px solid #742c3b!important;border-radius:0!important;transform:none!important;color:#742c3b;font:700 13px/2.1 "Space Mono"!important}
+.orb:after{content:"▧";position:absolute;right:20px;top:18px;font:700 26px "Space Mono";border:0!important;transform:none!important;opacity:.7!important}
+@keyframes pdfFloat{0%,100%{transform:rotate(-7deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-13px)}}@keyframes pdfBack{50%{transform:translateY(-50%) rotate(4deg)}}
+.cards article,.featureGrid article,.pricing article{border-radius:4px!important}
