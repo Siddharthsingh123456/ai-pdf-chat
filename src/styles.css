@@ -55,3 +55,16 @@ body:after{background:linear-gradient(90deg,#ff67670a 1px,transparent 1px),linea
 .nav nav button:first-child{border-left:0}
 .nav nav button:before{content:"//";color:#ff7777;margin-right:5px}
 .nav nav button:hover{background:#ff6f6f0d!important;color:#ffb5b5!important;transform:none!important}
+
+
+/* POST-LOGIN V4 — PDF RESEARCH DESK */
+.workspace{min-height:calc(100vh - 70px);padding:30px clamp(14px,3vw,42px) 75px;background:radial-gradient(circle at 75% 20%,#ff5d5d13,transparent 28%),#0a0809}
+.workspaceHead{max-width:1500px!important;padding:17px 20px!important;border:1px solid #ff6f6f38!important;border-radius:3px!important;background:#100a0df2!important}
+.workspaceHead h1{font-family:"Archivo"!important;font-size:39px!important}.workspaceHead p{font-family:"Space Mono"!important;color:#a98f96!important}
+.workGrid{max-width:1500px!important;grid-template-columns:360px minmax(0,1fr)!important;gap:14px!important}
+.tool,.result{border:1px solid #ff6f6f3d!important;border-radius:3px!important;background:#100a0deF!important;box-shadow:0 20px 60px #0009!important}
+.tool{padding:20px!important}.tool h2{font-family:"Space Mono"!important;font-size:19px!important;color:#ffb0ae!important}
+.fields textarea{min-height:400px!important;border-radius:2px!important;background:#070506!important;border-color:#ff6f6f30!important}
+.result{position:relative}.result pre{font-family:"Space Mono"!important;color:#e8d9dc!important;font-size:10px!important;line-height:1.9!important}
+.result>div{border-bottom:1px dashed #ff6f6f33!important}
+.primary{font-family:"Space Mono"!important;background:#ff7474!important;color:#26090d!important;border-radius:2px!important}
