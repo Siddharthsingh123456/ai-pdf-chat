@@ -68,3 +68,13 @@ body:after{background:linear-gradient(90deg,#ff67670a 1px,transparent 1px),linea
 .result{position:relative}.result pre{font-family:"Space Mono"!important;color:#e8d9dc!important;font-size:10px!important;line-height:1.9!important}
 .result>div{border-bottom:1px dashed #ff6f6f33!important}
 .primary{font-family:"Space Mono"!important;background:#ff7474!important;color:#26090d!important;border-radius:2px!important}
+
+
+/* FINAL SYSTEM — PDF / DOCUMENT STAMP CTA + FORMS + FOOTER */
+button.primary{border:1px solid #ff9a9a!important;border-radius:2px!important;background:#ff7070!important;color:#26090d!important;font:800 9px "Space Mono"!important;text-transform:uppercase!important;letter-spacing:.04em!important;box-shadow:0 8px 25px #ff5d5d25!important;transition:.2s!important}
+button.primary:hover{background:#ff9494!important;box-shadow:0 0 25px #ff5d5d55!important;transform:translateY(-2px)!important}
+input,textarea,select{border:1px solid #ff6f6f35!important;border-radius:2px!important;background:#080506!important;color:#f2dfe2!important;font-family:"Space Mono"!important;box-shadow:inset 0 0 20px #ff5d5d06!important}
+input:focus,textarea:focus,select:focus{outline:none!important;border-color:#ff8d8d!important;box-shadow:0 0 0 3px #ff6f6f0c,0 0 20px #ff5d5d15!important}
+.passwordField{display:grid!important;grid-template-columns:1fr auto!important;gap:5px!important}.passwordToggle{border:1px solid #ff6f6f35!important;border-radius:2px!important;background:#16090b!important;color:#ff9e9e!important;font-family:"Space Mono"!important}
+footer{margin:70px 0 0!important;padding:22px 16px!important;display:grid!important;grid-template-columns:1fr 1fr 1fr!important;gap:10px!important;border-top:1px dashed #ff6f6f44!important;border-bottom:1px dashed #ff6f6f22!important;background:#0c0809!important}
+footer b{font:800 13px "Space Mono"!important;color:#ff9d9d!important;text-transform:uppercase!important}footer span{font:500 7px/1.6 "Space Mono"!important;color:#8f747a!important}footer span:last-child{text-align:right!important;color:#bd858b!important}
