@@ -14,4 +14,36 @@ return <div className="site"><header className="nav"><button className="logo" on
 {page==="login"&&<section className="auth"><div className="authCard"><span className="eyebrow">{authMode==="login"?"WELCOME BACK":"CREATE ACCOUNT"}</span><h1>{authMode==="login"?"Sign in":"Create account"}</h1><p>Secure access to {P.name}.</p><input type="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="you@example.com"/><div className="passwordField"><input type={showPassword?"text":"password"} value={password} onChange={e=>setPassword(e.target.value)} placeholder="Password (8+ characters)"/><button type="button" className="passwordToggle" onClick={()=>setShowPassword(v=>!v)}>{showPassword?"Hide":"Show"}</button></div><button className="primary wide" onClick={auth} disabled={authBusy}>{authBusy?"Please wait…":authMode==="login"?"Login ↗":"Create account ↗"}</button><button className="ghost wide" onClick={()=>{setAuthMode(authMode==="login"?"register":"login");setAuthMessage("");setShowPassword(false)}}>{authMode==="login"?"Need an account? Register":"Already registered? Login"}</button>{authMessage&&<small className="note">{authMessage}</small>}</div></section>}
 {page==="workspace"&&user&&<PdfWorkspace user={user} loading={loading} output={output} run={run}/>}
 {page==="workspace"&&!user&&<section className="content"><h1>Protected workspace</h1><p>Please sign in to continue.</p><button className="primary" onClick={()=>setPage("login")}>Login ↗</button></section>}
-<footer><b>{P.name}</b><span>MERN + AI · JWT · MongoDB · Billing-ready</span><span>Home · About · Features · Pricing</span></footer></div>}createRoot(document.getElementById("root")).render(<App/>);
+<footer className="premiumFooter">
+  <div className="footerGlow" aria-hidden="true"></div>
+  <div className="footerMain">
+    <div className="footerBrand">
+      <button className="footerLogo" onClick={()=>setPage("home")}><span>▧</span><strong>AI PDF Chat</strong></button>
+      <p>Turn complex documents into clear answers with private, AI-powered document intelligence.</p>
+      <div className="footerStatus"><i></i><span>AI document engine ready</span></div>
+    </div>
+    <div className="footerColumn">
+      <span className="footerLabel">PRODUCT</span>
+      <button onClick={()=>setPage("home")}>Home</button>
+      <button onClick={()=>setPage("features")}>Features</button>
+      <button onClick={()=>setPage("pricing")}>Pricing</button>
+      <button onClick={()=>setPage("about")}>About</button>
+    </div>
+    <div className="footerColumn">
+      <span className="footerLabel">CAPABILITIES</span>
+      <span>PDF text extraction</span>
+      <span>Grounded AI answers</span>
+      <span>Secure workspace</span>
+      <span>Context-aware chat</span>
+    </div>
+    <div className="footerColumn footerTech">
+      <span className="footerLabel">POWERED BY</span>
+      <div className="techPills"><span>REACT</span><span>AI</span><span>JWT</span><span>MONGODB</span></div>
+      <p>Built for focused document research.</p>
+    </div>
+  </div>
+  <div className="footerBottom">
+    <span>© 2026 AI PDF Chat. All rights reserved.</span>
+    <span>Private by design · Built for modern knowledge work</span>
+  </div>
+</footer></div>}createRoot(document.getElementById("root")).render(<App/>);
