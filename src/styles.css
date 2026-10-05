@@ -369,3 +369,8 @@ footer.premiumFooter{
 @media(prefers-reduced-motion:reduce){
   .ai-ambient .orb,.premium-ai-ui .scrollReveal{animation:none!important;transition:none!important}
 }
+
+
+
+/* SIGNATURE THEME — DOCUMENT INTELLIGENCE / MIDNIGHT CYAN + VIOLET */
+:root{--brand:#56e0ff;--brand2:#9b7cff;--hot:#ff7f73}
